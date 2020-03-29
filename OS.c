@@ -7,7 +7,7 @@ struct process
 }
 process_queue[10]; 
 int limit;
-void Arrival_Time_Sorting() 
+void Arrival_time_sorting() 
 {
       struct process temp;
       int i, j;
@@ -42,7 +42,7 @@ int main()
             process_queue[i].status = 0; 
             Service_time+= process_queue[i].Service_time; 
       }
-      Arrival_Time_Sorting();
+      Arrival_time_sorting();
       process_queue[9].priority = -9999;
       printf("\nProcess Id\tArrival Time\tService Time\tPriority\tWaiting Time");
       for(time = process_queue[0].arrival_time; time < Service_time;)
