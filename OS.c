@@ -28,7 +28,7 @@ void Arrival_time_sorting()
 int main()
 {
       int i, time = 0, Service_time = 0, largest,c;  
-      float wait_time = 0, turnaround_time = 0, average_waiting_time, average_turnaround_time;
+      float wait_time = 0, turnaround_time = 0, avg_waiting_time, avg_turnaround_time;
       printf("\nEnter Total Number of Processes:\t");
       scanf("%d", &limit); 
       for(i = 0, c =1; i < limit; i++, c++)
@@ -64,9 +64,9 @@ int main()
             turnaround_time = turnaround_time + process_queue[largest].turnaround_time; 
             printf("\n%c\t\t%d\t\t%d\t\t%d\t\t%d", process_queue[largest].process_id, process_queue[largest].arrival_time, process_queue[largest].Service_time, process_queue[largest].priority, process_queue[largest].waiting_time);
       }
-      average_waiting_time = wait_time / limit; 
-      average_turnaround_time = turnaround_time / limit; 
-      printf("\n\nAverage waiting time:\t%f\n", average_waiting_time); 
+      avg_waiting_time = wait_time / limit; 
+      avg_turnaround_time = turnaround_time / limit; 
+      printf("\n\nAverage Waiting Time:\t%f\n", avg_waiting_time); 
       
 }
 
