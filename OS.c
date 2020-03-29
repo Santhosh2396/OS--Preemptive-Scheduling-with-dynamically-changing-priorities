@@ -62,7 +62,7 @@ int main()
             process_queue[largest].status = 1;
             wait_time = wait_time + process_queue[largest].waiting_time;
             turnaround_time = turnaround_time + process_queue[largest].turnaround_time; 
-            printf("\n%c\t\t%d\t\t%d\t\t%d\t\t%d", process_queue[largest].process_id, process_queue[largest].arrival_time, process_queue[largest].Service_time, process_queue[largest].priority, process_queue[largest].waiting_time);
+            printf("\n%d\t\t%d\t\t%d\t\t%d\t\t%d", process_queue[largest].process_id, process_queue[largest].arrival_time, process_queue[largest].Service_time, process_queue[largest].priority, process_queue[largest].waiting_time);
       }
       avg_waiting_time = wait_time / limit; 
       avg_turnaround_time = turnaround_time / limit; 
